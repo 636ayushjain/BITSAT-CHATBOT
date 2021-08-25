@@ -1,0 +1,344 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+  
+- story: iteration + fee
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_iterations
+  - action: utter_iterations
+  - intent: ask_fee
+  - action: utter_fee
+  - action: utter_did_that_help
+  - intent: thank
+  - action: utter_welcome
+
+  
+- story: courses + eligiblity
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: courses
+  - action: utter_courses
+  - intent: ask_paperpattern
+  - action: utter_ask_paperpattern
+  - intent: ss_eligiblity
+  - action: utter_ss  
+  - intent: affirm
+  - action: utter_happy
+
+  
+- story: print + mistake
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mademistake
+  - action: utter_correction
+  - intent: printnottaken
+  - action: utter_print  
+  - intent: deny
+  - action: utter_goodbye
+
+  
+- story: date + iterations
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_date
+  - action: utter_date
+  - intent: ask_iterations
+  - action: utter_iterations
+  - intent: ask_stipend
+  - action: utter_ask_stipend 
+  - intent: deny
+  - action: utter_goodbye
+  
+  
+- story: affidavit + board
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: whichboard
+  - action: utter_board
+  - intent: affidavit
+  - action: utter_affidavit  
+  - intent: thank
+  - action: utter_welcome
+   
+  
+- story: payment + bitsphoto
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: multiplepayments
+  - action: utter_paymentissue
+  - intent: bitsphoto
+  - action: utter_bitsphoto  
+  - intent: thank
+  - action: utter_welcome
+     
+  
+- story: form + foriegn
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: edit_form
+  - action: utter_edit
+  - intent: foreign_citizens
+  - action: utter_foreign
+  - intent: exam_centers
+  - action: utter_exam_centers 
+  - intent: thank
+  - action: utter_welcome
+  
+  
+- story: prepare + courses
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: prepare
+  - action: utter_prepration
+  - intent: courses
+  - action: utter_courses  
+  - intent: thank
+  - action: utter_welcome
+    
+  
+- story: freeze + mail+ fee
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: freezeoption
+  - action: utter_freeze
+  - intent: ask_mail
+  - action: utter_mail  
+  - intent: thank
+  - action: utter_welcome
+    
+  
+- story: freeze + mail+ fee
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: freezeoption
+  - action: utter_freeze
+  - intent: ask_mail
+  - action: utter_mail  
+  - intent: thank
+  - action: utter_welcome
+    
+  
+- story: mail+ bits photo
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_date
+  - action: utter_date
+  - intent: ask_mail
+  - action: utter_mail
+  - intent: ask_stipend
+  - action: utter_ask_stipend
+  - intent: bitsphoto
+  - action: utter_bitsphoto  
+  - intent: thank
+  - action: utter_welcome
+
+ 
+- story: fee+ ss+ foreign citizen
+  steps:
+  - intent: greet
+  - action: utter_greet    
+  - intent: ask_iterations
+  - action: utter_iterations 
+  - intent: ss_eligiblity
+  - action: utter_ss
+  - intent: edit_form
+  - action: utter_edit
+  - intent: foreign_citizens
+  - action: utter_foreign
+  - intent: ask_fee
+  - action: utter_fee
+  - intent: affirm
+  - action: utter_happy
+ 
+  
+- story: mail+ eligiblity
+  steps:
+  - intent: greet
+  - action: utter_greet   
+  - intent: ask_fee
+  - action: utter_fee
+  - intent: printnottaken
+  - action: utter_print
+  - intent: courses
+  - action: utter_courses 
+  - intent: ask_mail
+  - action: utter_mail
+  - intent: ss_eligiblity
+  - action: utter_ss
+  - intent: affirm
+  - action: utter_happy
+
+  
+- story: courses+ fee
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: printnottaken
+  - action: utter_print 
+  - intent: ask_fee
+  - action: utter_fee
+  - intent: courses
+  - action: utter_courses
+  - intent: bitsphoto
+  - action: utter_bitsphoto
+  - intent: thank
+  - action: utter_welcome
+
+  
+- story: affidavit +  print + edit
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - intent: affidavit
+  - action: utter_affidavit
+  - intent: printnottaken
+  - action: utter_print
+  - intent: edit_form
+  - action: utter_edit
+  
+  - intent: thank
+  - action: utter_welcome
+
+
+- story: campuses+ mail
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - intent: ask_mail
+  - action: utter_mail
+  - intent: affidavit
+  - intent: ask_campuses 
+  - action: utter_ask_campuses
+  - action: utter_affidavit
+  - intent: thank
+  - action: utter_welcome
+     
+- story: iteration + date
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - intent: ask_date
+  - action: utter_date
+  - intent: ask_iterations
+  - action: utter_iterations 
+  - intent: bitsphoto
+  - action: utter_bitsphoto
+  - intent: thank
+  - action: utter_welcome
+
+- story: exam centers
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - action: utter_greet
+  - intent: prepare
+  - intent: ask_iterations
+  - action: utter_iterations
+  - intent: exam_centers
+  - action: utter_exam_centers
+  - intent: ask_date
+  - action: utter_date
+  - intent: thank
+  - action: utter_welcome
+
+- story: payment issue
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - intent: prepare
+  - action: utter_prepration 
+  - intent: ask_date
+  - action: utter_date
+  - intent: exam_centers
+  - action: utter_exam_centers
+  - intent: foreign_citizens
+  - action: utter_foreign
+  - intent: multiplepayments
+  - action: utter_paymentissue
+
+- story: applications fees
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - intent: edit_form
+  - action: utter_edit
+  - intent: prepare
+  - action: utter_prepration
+  - action: utter_exam_centers
+  - intent: applicationfees
+  - intent: thank
+  - action: utter_welcome
+- story: stipend
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - intent: exam_centers
+  - action: utter_exam_centers
+  - intent: applicationfees 
+  - action: utter_ applicationfees
+  - intent: ask_syllabus
+  - action: utter_ask_syllabus
+  - intent: ask_campuses 
+  - action: utter_ask_campuses
+  - intent: ask_paperpattern
+  - action: utter_ask_paperpattern
+  - intent: ask_stipend
+  - action: utter_ask_stipend  
+- story: me courses
+  steps:
+  - intent: mecourses
+  - action: utter_mecourses
+- story: becourses
+  steps:
+  - intent: becourses 
+  - action: utter_becourses    
+- story: msccourses
+  steps:
+  - intent: msccourses 
+  - action: utter_msccourses       
+- story: data save
+  steps:
+  - intent: savedata 
+  - action: action_save_conversation  
+            
