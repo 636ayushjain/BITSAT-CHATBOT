@@ -1,0 +1,11 @@
+ 1-> print + form + affidavit,2 -> prepare + iterations + date + multiplepayments,3 -> fees + bitsphoto + mail,4-> sseligiblity + date + foreign citizens,5-> stipend + freezeoption + mail,6-> iteration + mail
+greet,greet,greet,greet,greet,greet 
+utter_greet,utter_greet,utter_greet,utter_greet,utter_greet,utter_greet
+affidavit,prepare,ask_fees,ss_eligiblity,stipend,ask_mail
+utter_affidavit,utter_prepare,utter_ask_fees,utter_ss_eligiblity,utter_stipend,utter_mail
+printnottaken,ask_iterations,bitsphoto,foreign_citizens,freezeoption,affidavit
+utter_printnottaken,utter_ask_iterations,utter_bitsphoto,utter_foreign_citizens,utter_freeze,ask_campuses 
+edit_form,ask_date,ask_mail,ask_date,ask_mail,utter_ask_campuses
+utter_editform,utter_ask_date,utter_ask_mail,utter_ask_date,utter_mail  ,utter_affidavit
+thank,multiplepayments,thank,thank,thank,thank
+utter_thank,utter_multiplepayments,utter_thank,utter_thank,utter_welcome,utter_welcome

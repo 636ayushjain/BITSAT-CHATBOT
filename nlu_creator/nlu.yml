@@ -1,0 +1,131 @@
+version: "2.0"
+
+nlu:
+- intent: ask_date
+  examples: |
+   - When will BITSHD be conducted?
+   - What are the dates for BITSHD?
+   - When is BITSHD scheduled to be held?
+   - Dates for BITSHD?
+   - When will BITSHD be held?
+   - When will BITSHD be held?
+   - when is bitshd
+   - bitshd
+   - when is bitshd going to be?
+   - bitshd exam date?
+   - on which date bitshd will happen?
+   - date for bitshd
+   - bitshd exam date
+   - bitshd exam schedule
+- intent: courses
+  examples: |
+   - what courses offered at bits pilani?
+   - courses in bits pilani
+   - what are the courses at bits pilani
+   - courses at bits pilani
+   - what branches are there at bits pilani?
+   - master courses at bits pilani
+   - courses at bits pilani
+   - tell me about course in bits
+   - show me course here
+   - which courses are there for me
+   - show all courses
+   - courses
+   - what are courses in bits
+   - course contents
+- intent: bitsphoto
+  examples: |
+   - how bits pilani looks?
+   - glimpses of bits pilani
+   - show photo of bits pilani
+   - images of bits pilani
+   - how is bits pilani
+   - bitsphoto
+   - how bits pilani looks
+   - images of bits pilani
+   - bits pilani images
+   - photo of bits
+   - bits pilani photos
+   - photo of bits
+   - bits image
+   - pic of bits
+- intent: exam_centers
+  examples: |
+   - what are exam centers of bitshd
+   - exam centers of bitshd
+   - exam center for bitsat
+   - which are the exam centers of bitshd
+   - where bitshd exam is conducted 
+   - cities in which bitshd is conducted
+   - where bitshd exam is taken
+   - all centers of bitshd exam
+   - bitsat exam centers
+   - bits exam centers
+   - exam center for bitsat
+   - center for exam
+   - exam cities
+   - exam center for bitsat
+- intent: applicationfees
+  examples: |
+   - what is the application fees for bitshd
+   - application fees for hd exam
+   - how much to pay for application fees 
+   - application fees for bitshd exam
+   - how much to pay for bits application form
+   - how much should i pay for bits
+   - bits application fees
+   - moned to be paid for application 
+   - application fees
+   - fees
+   - fees for application
+   - application fees
+   - apply fee
+   - appicable fee
+- intent: ask_syllabus
+  examples: |
+   - what is syllabus for bitshd
+   - syllabus for bitshd
+   - how is exam syllabus for bitshd
+   - syllabus content for bitshd exam
+   - show me syllabus for exam
+   - syllabus for bits exam
+   - me computer science syllabus
+   - what are the subjects to learns for bits exam
+   - subjects to learn
+   - what to learn
+   - subjects to learn
+   - what subjects to learn
+   - learn subjects
+   - what to learn for exam
+- intent: ask_campuses
+  examples: |
+   - what are campuses of bits pilani
+   - which are campuses of bits pilani
+   - how many capmuses of bits pilani
+   - campuses of bits pilani
+   - total campuses
+   - campuses
+   - what are the campuses of bits
+   - in which cities bits pilani is there
+   - how many cities do bits pilani exist
+   - tell about campuses of bits
+   - bits campuses
+   - all campuses
+   - how many campus
+   - tell about campuses
+- intent: ask_paperpattern
+  examples: |
+   - what is paper pattern for exam
+   - paper pattern for bitshd 
+   - how is paper pattern for bitshd 
+   - paper pattern
+   - tell me paper pattern for bitshd 
+   - bitshd paper pattern
+   - how will bw the paper for bits
+   - bitshd paper pattern
+   - pattern of paper
+   - bitshd exam pattern
+   - pattern of paper
+   - paper pattern
+   - architeture of paper
+   - paper content

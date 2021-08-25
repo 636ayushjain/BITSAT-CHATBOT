@@ -1,0 +1,37 @@
+version "2.0"
+
+intents:
+  - stipend
+  - ask_paperpattern
+  - campus
+  - bitsphoto
+  - paymentissue
+  - preparation
+  - affidavit
+  - courses
+
+
+responses:
+  utter_stipend:
+  - text: For GATE admitted student stipend is RS 25000 and for HD admitted it is RS 12400
+  utter_ask_paperpattern:
+  - text:paper1 -aptitude+ maths,paper-2 cs technical ,paper-3 ss technical
+  utter_campus:
+  - text: There are 4 campuses of BITS Pilani- Pilani,Hyderabad ,Goa,Dubai
+  utter_bitsphoto:
+  - image: https://www.bits-pilani.ac.in/Uploads/Pilani/pilanimanagementadmin/Gallery/2019-3-3--1-5-35 181_11081350_10204923222032942_111273732564396594_n.jpg
+  utter_paymentissue:
+  - text: If you have made multiple payments towards BITSAT application fee for an application, Institute will refund the extra amount during March 2021. You have to provide your bank details to claim this amount during 15th june to 20th july 2021 online through the BITS admission website.  An option will be provided then.
+  utter_preparation:
+  - text: To prepare for bitshd exam 1. Go through the syllabus on website 2. Read GATE notes throughly. 3. Give test series 4. practice Aptitude daily 5. Solve Engineering maths
+  utter_affidavit:
+  - text: You need to fill up the antiragging form here at this site:- www.antiragging.in/Site/Affidavits_Registration.aspx Some information for filling up this form can be obtained from the instructions page that is in the "admission" tab under    "students"   on the webpage of the respective campus website.
+  utter_courses:
+  - text: choose courses
+    buttons:
+    - title: ME  
+      payload: /mecourses
+    - title: BE
+      payload: /becourses
+    - title: MSC  
+      payload: /msccourses

@@ -1,0 +1,76 @@
+version: "2.0"
+
+stories:
+
+- story:  1-> print + form + affidavit
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: affidavit
+  - action: utter_affidavit
+  - intent: printnottaken
+  - action: utter_printnottaken
+  - intent: edit_form
+  - action: utter_editform
+  - intent: thank
+  - action: utter_thank
+- story: 2 -> prepare + iterations + date + multiplepayments
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: prepare
+  - action: utter_prepare
+  - intent: ask_iterations
+  - action: utter_ask_iterations
+  - intent: ask_date
+  - action: utter_ask_date
+  - intent: multiplepayments
+  - action: utter_multiplepayments
+- story: 3 -> fees + bitsphoto + mail
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_fees
+  - action: utter_ask_fees
+  - intent: bitsphoto
+  - action: utter_bitsphoto
+  - intent: ask_mail
+  - action: utter_ask_mail
+  - intent: thank
+  - action: utter_thank
+- story: 4-> sseligiblity + date + foreign citizens
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ss_eligiblity
+  - action: utter_ss_eligiblity
+  - intent: foreign_citizens
+  - action: utter_foreign_citizens
+  - intent: ask_date
+  - action: utter_ask_date
+  - intent: thank
+  - action: utter_thank
+- story: 5-> stipend + freezeoption + mail
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: stipend
+  - action: utter_stipend
+  - intent: freezeoption
+  - action: utter_freeze
+  - intent: ask_mail
+  - action: utter_mail  
+  - intent: thank
+  - action: utter_welcome
+- story: 6-> iteration + mail
+  steps: 
+  - intent: greet 
+  - action: utter_greet
+  - intent: ask_mail
+  - action: utter_mail
+  - intent: affidavit
+  - action: ask_campuses 
+  - intent: utter_ask_campuses
+  - action: utter_affidavit
+  - intent: thank
+  - action: utter_welcome
