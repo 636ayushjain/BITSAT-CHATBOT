@@ -1,0 +1,169 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thank
+  - ask_date
+  - ask_iterations
+  - edit_form
+  - ask_mail
+  - ask_fee
+  - foreign_citizens
+  - ss_eligiblity
+  - courses
+  - prepare
+  - bitsphoto
+  - multiplepayments
+  - freezeoption
+  - printnottaken
+  - mademistake
+  - whichboard
+  - affidavit
+  - exam_centers
+  - applicationfees
+  - ask_syllabus
+  - ask_campuses
+  - ask_paperpattern
+  - ask_stipend
+  - savedata
+  - mecourses
+  - becourses
+  - msccourses
+  
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_welcome:
+  - text: You are welcome!
+  
+  utter_date:
+  - text: BITSHD is scheduled to be held from 26th to 27th june.
+  
+  utter_iterations:
+  - text: There are four iterations for seat allocation.First on GATE score and rest on BITSHD exam and GATE score simultaneously.
+  
+  utter_edit:
+  - text: The link for editing the application form will be made available on the website during 15th May 2021 to 20th May 2021 and you   can edit the required fields during this period.  No email queries will be entertained in this regard.
+  
+  utter_mail:
+  - text: The application cannot be sent by email/post. If you get any specific error while applying, please send an email to bitshdtest2021@pilani.bits-pilani.ac.in for help with details and queries will also be answered by the phone number- 022-61306284 during Monday-Friday 9.00am till 6.00pm.
+  
+  utter_fee:
+  - text: The fee details for 2021-22 are:[first Degree  ](https://www.bitsadmission.com/fdfee202021.aspx)[Higher Degree](https://www.bitsadmission.com/hd/SCHEDULE%20OF%20FEES_Final.pdf)
+  
+  utter_foreign:
+  - text: Candidates who have citizenship other than INDIA can apply under International students admissions scheme.
+  
+  utter_ss:
+  - text: Candidates can write BITSHD 2021 with CSE,IT,ECE,MECHENICAL,CIVIL,ELECTRICAL in graduation. However, candidates with IT branch  will be eligible to apply only for the software system course. They will not be eligible for any other higher degree program of the Institute.
+  
+  utter_courses:
+  - text: choose courses
+    buttons:
+    - title: ME  
+      payload: /mecourses
+    - title: BE
+      payload: /becourses
+    - title: MSC  
+      payload: /msccourses
+   
+  utter_prepration:
+  - text: To prepare for bitshd exam 1. Go through the syllabus on website 2. Read GATE notes throughly. 3. Give test series 4. practice Aptitude daily 5. Solve Engineering maths
+  
+  utter_bitsphoto:
+  - image: https://www.bits-pilani.ac.in/Uploads/Pilani/pilanimanagementadmin/Gallery/2019-3-3--1-5-35-181_11081350_10204923222032942_111273732564396594_n.jpg
+    text: here is bits pilani photo
+  
+  utter_paymentissue:
+  - text: If you have made multiple payments towards BITSAT application fee for an application, Institute will refund the extra amount during March 2021. You have to provide your bank details to claim this amount during 15th june to 20th july 2021 online through the BITS admission website.  An option will be provided then.
+  
+  utter_freeze:
+  - text: No you cannot freeze options in between iterations.
+  
+  utter_print:
+  - text: You can go to the applying online page again and enter the personal details AND the application number. You will be taken to the printout page again.
+  
+  utter_correction:
+  - text: The link for editing the application form will be made available on the website during 1st April 2021 to 6th April 2021 and you can edit the required fields during this period.  No email queries will be entertained in this regard.
+  
+  utter_board:
+  - text: You need to the include the aggregated marks of 12 th board only. Count the practical marks as well.
+  
+  utter_affidavit:
+  - text: You need to fill up the antiragging form here at this site:- www.antiragging.in/Site/Affidavits_Registration.aspx Some information for filling up this form can be obtained from the instructions page that is in the "admission" tab under    "students"   on the webpage of the respective campus website.
+  utter_exam_centers:
+  - text: exam centers are 
+    image: https://www.entrancei.com/webroot//files/exam-centre.jpeg
+  utter_ applicationfees:
+  - text: bits hd application fees is RS 3300 
+  utter_ask_syllabus:
+  - text: syllabus for bits hd me cs is data structure ,algorithms,dbms,computer networks ,computer organisation, toc. also refer brochure for more details.
+  utter_ask_campuses:
+  - text: there are 3 campuses in india - pilani,goa,hyderabad and one campus in dubai united arab.
+  utter_ask_paperpattern:
+  - text: paper1 -aptitude+ maths,paper-2 cs technical ,paper-3 ss technical
+  utter_ask_stipend:
+  - text: gate admitted stipend is RS 25000 while hd admitted is RS 12400
+  utter_mecourses:
+  - text: M.E. CIVIL, STRUCTURAL ENGINEERING
+          M.E. CIVIL, TRANSPORTATION ENGINEERING
+          M.E. CHEMICAL ENGINEERING
+          M.E. COMMUNICATION ENGINEERING
+          M.E. MICROELECTRONICS
+          M.E. EMBEDDED SYSTEMS
+          M.E. COMPUTER SCIENCE
+          M.E. SOFTWARE SYSTEMS
+          M.E. MECHANICAL ENGINEERING
+          M.E. DESIGN ENGINEERING
+          M.E. MANUFACTURING SYSTEMS
+          M.E. BIOTECHNOLOGY
+
+  utter_becourses:
+  - text: B.E. (HONS) CHEMICAL ENGINEERING
+          B.E. (HONS) CIVIL ENGINEERING
+          B.E. (HONS) COMPUTER SCIENCE
+          B.E. (HONS) ELECTRICAL AND ELECTRONICS ENGINEERING
+          B.E. (HONS) ELECTRONICS AND INSTRUMENTATION ENGINEERING
+          B.E. (HONS) MECHANICAL ENGINEERING
+          B.E. (HONS) MANUFACTURING ENGINEERING
+          B PHARM
+
+  utter_msccourses:
+   - text: MSc. (HONS) BIOLOGY
+           MSc. (HONS) CHEMISTRY
+           MSc. (HONS) ECONOMICS
+           MSc. (HONS) MATHEMATICS
+           MSc. (HONS) PHYSICS
+
+  utter_please_rephrase:
+   - text: I'm sorry, I didnt found information. 
+
+ 
+actions:
+  - action_save_conversation  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
