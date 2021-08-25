@@ -1,0 +1,87 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
+intents:
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- ask_iterations:
+    use_entities: true
+- ask_fee:
+    use_entities: true
+- thank:
+    use_entities: true
+- greet:
+    use_entities: true
+- ask_date:
+    use_entities: true
+- ss_eligiblity:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- ask_mail:
+    use_entities: true
+- foreign_citizens:
+    use_entities: true
+- edit_form:
+    use_entities: true
+- me_courses:
+    use_entities: true
+- prepare:
+    use_entities: true
+- bitsphoto:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'আপনাকে উত্সাহ দেওয়ার জন্য এখানে কিছু রয়েছে:'
+  utter_did_that_help:
+  - text: এটা কি আপনাকে সাহায্য করেছে?
+  utter_happy:
+  - text: দুর্দান্ত, চালিয়ে যাও
+  utter_iamabot:
+  - text: আমি একটি বট, রস দ্বারা চালিত।
+  utter_dates:
+  - text: BITHD 26 থেকে 27 শে জুন পর্যন্ত অনুষ্ঠিত হওয়ার কথা রয়েছে।
+  utter_goodbye:
+  - text: বাই
+  utter_greet:
+  - text: আরে, আমি কীভাবে আপনাকে সহায়তা করতে পারি?
+  utter_iterations:
+  - text: আসন বরাদ্দের জন্য চারটি পুনরাবৃত্তি রয়েছে G গেটের স্কোরের প্রথম এবং বিটিএসএইচডি পরীক্ষা এবং গেটের স্কোর একই সাথে on
+  utter_welcome:
+  - text: You are welcome!
+  utter_edit:
+  - text: আবেদন ফর্ম সম্পাদনার লিঙ্কটি 15 মে 2021 থেকে 20 মে 2021 সালের মধ্যে ওয়েবসাইটে উপলব্ধ করা হবে এবং আপনি এই সময়ের মধ্যে প্রয়োজনীয় ক্ষেত্রগুলি সম্পাদনা করতে পারেন। এক্ষেত্রে কোনও ইমেল প্রশ্নের বিনোদন দেওয়া হবে না।
+  utter_mail:
+  - text: আবেদন ইমেল / পোস্ট দ্বারা প্রেরণ করা যাবে না। আবেদনের সময় আপনি যদি কোনও নির্দিষ্ট ত্রুটি পেয়ে থাকেন তবে দয়া করে বিশদ ও প্রশ্নের সাহায্যের জন্য bitshdtest2021@pilani.BS-pilani.ac.in এ একটি ইমেল প্রেরণ করুন সোমবার-শুক্রবার সকাল 9.00 টা পর্যন্ত ফোন নম্বর- 022-61306284 এর মাধ্যমে উত্তর দেওয়া হবে সন্ধ্যা 00.০০ টা।
+  utter_ss:
+  - text: প্রার্থীরা বিএসটিএইচডি 2021 স্নাতক বিভাগে সিএসই, আইটি, ইসি, মেকানিকাল, সিভিল, বৈদ্যুতিন সহ লিখতে পারেন। তবে আইটি শাখার সাথে প্রার্থীরা কেবল সফটওয়্যার সিস্টেম কোর্সে আবেদনের যোগ্য হতে পারবেন। তারা ইনস্টিটিউটের অন্য কোনও উচ্চতর ডিগ্রি প্রোগ্রামের জন্য যোগ্য হবে না।
+  utter_fee:
+  - text: 2021-22 এর জন্য ফি বিশদ:[first Degree  ](https://www.bitsadmission.com/fdfee202021.aspx)[Higher Degree](https://www.bitsadmission.com/hd/SCHEDULE%20OF%20FEES_Final.pdf)
+  utter_foreign:
+  - text: INDIA ব্যতীত অন্য যেসব নাগরিকত্ব রয়েছে তারা প্রার্থীরা আন্তর্জাতিক শিক্ষার্থী ভর্তি প্রকল্পের আওতায় আবেদন করতে পারবেন।
+  utter_courses:
+  - text: |-
+      Pilani Campus
+      M.E.(Biotechnology) M.E. Chemical (with specialization in Petroleum Engineering) M.E.(Civil - Structural Engineering) M.E.(Civil - Infrastructure Systems) M.E.(Civil - Transportation Engineering) M.E. (Communication Engineering) M.E. (Computer Science) M.E. (Embedded Systems) M.E. (Microelectronics) M.E. Electrical (Power Electronics and Drives) M.E. (Mechanical Engineering) M.E. (Manufacturing Systems Engineering) M.E. (Design Engineering) M.E. (Mechanical Engineering) M.E. (Software Systems) M.E. (Manufacturing Systems Engineering)
+  utter_prepration:
+  - text: বিটশড পরীক্ষার জন্য প্রস্তুতি নিতে ১. ওয়েবসাইটটিতে সিলেবাসের মাধ্যমে যান ২. গেটের নোটগুলি মাধ্যমে পড়ুন। ৩. টেস্ট সিরিজ দিন ৪.প্রতি দিন দক্ষতা অনুশীলন করুন Engineering ইঞ্জিনিয়ারিংয়ের গণিত সমাধান করুন
+  utter_bitsphoto:
+  - image: https://www.bits-pilani.ac.in/Uploads/Pilani/pilanimanagementadmin/Gallery/2019-3-3--1-5-35-181_11081350_10204923222032942_111273732564396594_n.jpg
+    text: এখানে বিটস পিলানির ছবি রয়েছে
+actions: []
+forms: {}
+e2e_actions: []
